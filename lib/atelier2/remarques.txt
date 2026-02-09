@@ -1,0 +1,15 @@
+// 
+Widget => Element Graphique: Bouton, icone,image,etc
+Widget => Une Classe POO
+Classe => Constructeur avec le paramétres nommés
+MaterialApp() : unique par Projet
+  - Configuration de Toute APPlication :
+     Theme,Langue,Routes, route par defaut ...
+Scaffold():point d'entrée pour chaque page(screen de votre application)
+//dev:
+  pour les widget :A Majus
+  les attributs nommés: a minsucule
+une application Flutter Arbre de Widget:
+  widget imbriqués
+     Pere => Fils
+     
