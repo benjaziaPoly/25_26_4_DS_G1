@@ -1,0 +1,36 @@
+# Fichiers de compilation Flutter/Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+
+# Fichiers spécifiques à Android
+.gradle/
+local.properties
+**/android/**.keystore
+**/android/**.jks
+**/android/bundle/
+**/android/app/src/main/res/raw/
+
+# Fichiers spécifiques à iOS/macOS
+*.xcworkspace
+*.xcscheme
+*.xschedulestat
+*.xcconfig
+DerivedData/
+Pods/
+Podfile.lock
+
+# Configuration de l'éditeur (VS Code, IntelliJ)
+.vscode/
+.idea/
+*.iml
+*.iws
+
+# Fichiers système et divers
+.DS_Store
+*.log
+.env*
