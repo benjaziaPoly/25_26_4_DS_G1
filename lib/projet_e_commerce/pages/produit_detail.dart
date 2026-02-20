@@ -1,15 +1,22 @@
 import 'package:flutter/material.dart';
 
-class ListProduitsPage extends StatefulWidget {
-  const ListProduitsPage({super.key});
+class ProduitDetailPage extends StatefulWidget {
+  const ProduitDetailPage({super.key});
 
   @override
-  State<ListProduitsPage> createState() => _MyWidgetState();
+  State<ProduitDetailPage> createState() => _MyWidgetState();
 }
 
-class _MyWidgetState extends State<ListProduitsPage> {
+class _MyWidgetState extends State<ProduitDetailPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Detail produit"),
+        centerTitle: true,
+        backgroundColor: Colors.blue,
+      ),
+      body: Text("To DO....."),
+    );
   }
 }

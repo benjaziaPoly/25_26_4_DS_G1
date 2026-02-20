@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:projet1/projet_e_commerce/myWidgets/carrousel_image.dart';
+
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -16,7 +18,13 @@ class _MyWidgetState extends State<HomePage> {
         centerTitle: true,
         backgroundColor: Colors.blue,
       ),
-      body: Text("To DO....."),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          ImageCarrousel(),
+       
+          ],
+      ),
     );
   }
 }
