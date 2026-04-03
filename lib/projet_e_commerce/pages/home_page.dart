@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:projet1/projet_e_commerce/const/images.dart';
 import 'package:projet1/projet_e_commerce/myWidgets/carrousel_image.dart';
 import 'package:projet1/projet_e_commerce/myWidgets/image_categories.dart';
+import 'package:projet1/projet_e_commerce/myWidgets/mon_menu.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -14,6 +15,7 @@ class _MyWidgetState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: MonMenu(),
       appBar: AppBar(
         title: Text("Page d'accueil"),
         centerTitle: true,
