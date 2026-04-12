@@ -9,6 +9,7 @@ class Produit {
   String brand;
   String produitCategoryName;
   int quantity;
+  
   Produit({
     required this.id,
     required this.title,
