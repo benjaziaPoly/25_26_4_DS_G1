@@ -1,4 +1,7 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class MonMenu extends StatefulWidget {
   const MonMenu({super.key});
@@ -77,7 +80,10 @@ class _MyWidgetState extends State<MonMenu> {
             selected: selectedMenu,
             leading: Icon(Icons.exit_to_app),
             title: Text("Quitter"),
-            onTap: () {},
+            onTap: () {
+              //SystemNavigator.pop();
+              exit(0);
+            },
           ),
         ],
       ),

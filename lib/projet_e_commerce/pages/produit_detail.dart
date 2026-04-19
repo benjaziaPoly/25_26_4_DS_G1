@@ -160,6 +160,7 @@ class _ProduitDetailScreenState extends State<ProduitDetailScreen> {
                               quantite: 1,
                             ),
                           );
+                          panier.saveCart();
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.pink,

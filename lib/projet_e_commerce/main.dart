@@ -38,3 +38,11 @@ class EcommerceApp extends StatelessWidget {
     //BarreNavigationScreen
   }
 }
+
+// implémentaion d'eun exmple d'appel ASYNCHRONE
+// Future<void> getImage() async{
+//    aa
+//    //opération lente
+//    await Instruction(); 
+//    aaaa
+// }

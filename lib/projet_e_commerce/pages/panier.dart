@@ -11,8 +11,10 @@ class PanierPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //List<ProduitPanier> contenuPanier=[];// varaibel locale
-    final contenuPanier = Provider.of<PanierProvider>(context).Panier; //globle
+    //final contenuPanier = Provider.of<PanierProvider>(context).Panier; //globle
+    final contenuPanier = context.watch<PanierProvider>().Panier;
 
+    Provider.of<PanierProvider>(context).Panier; //globle
     print("xxxTAILLE PANIER=" + contenuPanier.length.toString());
 
     return contenuPanier.isEmpty
