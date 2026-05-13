@@ -1,7 +1,12 @@
 import 'dart:io';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:projet1/projet_e_commerce/data/list_produits.dart';
+import 'package:projet1/projet_e_commerce/model/class_produit.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:projet1/projet_e_commerce/services/firebase_service.dart';
 
 class MonMenu extends StatefulWidget {
   const MonMenu({super.key});
@@ -11,6 +16,8 @@ class MonMenu extends StatefulWidget {
 }
 
 class _MyWidgetState extends State<MonMenu> {
+  var fbs = FireBaseServices();
+
   var selectedMenu = false;
   @override
   Widget build(BuildContext context) {
@@ -74,6 +81,24 @@ class _MyWidgetState extends State<MonMenu> {
             title: Text("Mon Profil"),
             onTap: () {
               Navigator.pushNamed(context, 'profile');
+            },
+          ),
+          ListTile(
+            selected: selectedMenu,
+            enabled: true,
+            leading: Icon(Icons.person),
+            title: Text("Charger DAta"),
+            onTap: () {
+              print("Save data to Firebase ....");
+              fbs.sauvegarderProduits(AllProductData.Produits);
+            },
+          ),
+          ListTile(
+            enabled: true,
+            leading: Icon(Icons.sunny),
+            title: Text("Consulter Méteo"),
+            onTap: () {
+              Navigator.pushNamed(context, "meteo");
             },
           ),
           ListTile(

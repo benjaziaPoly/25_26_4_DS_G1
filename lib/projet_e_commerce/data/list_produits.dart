@@ -583,8 +583,7 @@ class AllProductData {
   ];
 
   static List<Produit> get Produits {
+    print("Nombre des Produits:${_produits.length}");
     return _produits;
   }
 }
-
-
